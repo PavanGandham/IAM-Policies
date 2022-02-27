@@ -1,0 +1,17 @@
+{
+    "Version":"2012-10-17",
+    "Statement":[
+        {
+            "Sid":"Allow-All",
+            "Effect":"Allow",
+            "Action":["*"],
+            "Resource":["*"]
+        },
+        {
+            "Sid":"Deny-IAM",
+            "Effect":"Deny",
+            "Action":["iam:*"],
+            "Resource":["*"]
+        }
+    ]
+}
